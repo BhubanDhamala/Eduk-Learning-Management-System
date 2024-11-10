@@ -33,7 +33,7 @@ body {
     margin: -146px auto !important;
     position: absolute;
 }
-		.chmsc{
+		.EDUK{
 			display:none;
 		}
 		.title h3 {
@@ -56,7 +56,7 @@ body {
 			float: none;
 			margin-top: 0px !important;
 		}
-		.chmsc {
+		.EDUK {
 			font-size: 10px !important;
 		}
 		#login .form-signin {
@@ -96,7 +96,7 @@ font-family: 'TR Century Gothic';
 body{
     background-color: rgba(0, 0, 0, 0) !important;
 }
-.chmsc{
+.EDUK{
 	font-weight: bold;
 	color: #555;
     font-size: 12px;

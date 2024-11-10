@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>CHMSC LMS</title>
+        <title>EDUK LMS</title>
 		<meta name="description" content="Learning Management System">
-		<meta name="keywords" content="CHMSC LMS,CHMSCLMS,CHMSC,LMS,CHMSCLMS.COMXA">
+		<meta name="keywords" content="EDUK LMS,EDUKLMS,EDUK,LMS,EDUKLMS.COMXA">
 		<meta name="author" content="JOHN KEVIN LORAYNA">
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
