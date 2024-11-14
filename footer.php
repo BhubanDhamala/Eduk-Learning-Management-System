@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fui">
 	<footer class="text-center bg-body-tertiary">
   <!-- Grid container -->
   <div class="container-fluid pt-4">
