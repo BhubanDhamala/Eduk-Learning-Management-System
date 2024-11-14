@@ -285,8 +285,8 @@
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
+                <li><a href="">Courses</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
@@ -357,7 +357,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Upcoming Deadlines</h5>
                         <p class="card-text">Check deadlines for assignments and quizzes.</p>
-                        <a href="#" class="btn btn-primary">View Deadlines</a>
+                        <a href="http://localhost/Eduk-Learning-Management-System/announcements_student.php?id=189" class="btn btn-primary">View Deadlines</a>
                     </div>
                 </div>
             </div>
@@ -382,7 +382,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Messaging</h5>
                         <p class="card-text">Send and receive messages from instructors and classmates.</p>
-                        <a href="#" class="btn btn-primary">Open Messages</a>
+                        <a href="http://localhost/Eduk-Learning-Management-System/student_message.php" class="btn btn-primary">Open Messages</a>
                     </div>
                 </div>
             </div>
@@ -390,17 +390,91 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer mt-5">
-        <div class="container">
-            <p>&copy; 2024 Learning Management System | All Rights Reserved</p>
+    <!-- <footer class="footer mt-5">
+        <div class="container-fluid">
+            <p>&copy; 2024 Eduk Learning Management System | All Rights Reserved</p>
             <p>Follow us:
                 <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
                 <a href="#"><i class="fab fa-twitter text-white"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
             </p>
         </div>
-    </footer>
+    </footer> -->
+    <footer class="text-center bg-body-tertiary">
+  <!-- Grid container -->
+  <div class="container-fluid pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
 
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-body" href="#">Eduk Learning Management System | All Rights Reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
