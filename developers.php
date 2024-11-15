@@ -15,7 +15,7 @@
 							<hr>
                                 <div class="span3">
 										<center>
-										<img id="developers" src="admin/images/bhuban.jpg" class="img-circle">
+										<img id="developers" src="admin/images/bhuban.png" class="img-circle">
 										<hr>
 										<p>Name: Bhuban Dhamala</p>
 										<p>Address: Kathmandu</p>
@@ -24,7 +24,7 @@
 								</div>
                                 <div class="span3">
 															<center>
-								<img id="developers" src="admin/images/asmita.jpg" class="img-circle">
+								<img id="developers" src="admin/images/asmita.png" class="img-circle">
 								<hr>
 										<p>Name: Asmita Shrestha</p>
 										<p>Address: Bhaktapur</p>
@@ -33,7 +33,7 @@
 								</div>
                                 <div class="span3">
 															<center>
-								<img id="developers" src="admin/images/bipin1.jpg" class="img-circle">
+								<img id="developers" src="admin/images/bipin.png" class="img-circle">
 								<hr>
 												<p>Name: Bipin Paudel</p>
 										<p>Address: Kathmandu</p>

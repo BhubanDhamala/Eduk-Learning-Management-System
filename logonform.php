@@ -2,13 +2,17 @@
 <style>
 	body#login::before {
     content: "";
+    background-image: url('./admin/images/eduk.png');
+    /* background-repeat: no-repeat; */
+
+  
 
     position: absolute;
     top: 0;
     /* z-index: 1; */
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 	
 </style>
