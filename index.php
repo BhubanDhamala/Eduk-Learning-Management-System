@@ -287,7 +287,7 @@
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
                 <li><a href="">Courses</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://localhost/Eduk-Learning-Management-System/contactform.php">Contact</a></li>
                 <li><a href="#">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
             </ul>
@@ -382,7 +382,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Messaging</h5>
                         <p class="card-text">Send and receive messages from instructors and classmates.</p>
-                        <a href="http://localhost/Eduk-Learning-Management-System/student_message.php" class="btn btn-primary">Open Messages</a>
+                        <a href="http://localhost/Eduk-Learning-Management-System/student_message_student_copy.php" class="btn btn-primary">Open Messages</a>
                     </div>
                 </div>
             </div>
