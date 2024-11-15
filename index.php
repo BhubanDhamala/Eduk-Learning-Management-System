@@ -287,7 +287,7 @@
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
                 <li><a href="">Courses</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://localhost/Eduk-Learning-Management-System/contactform.php">Contact</a></li>
                 <li><a href="#">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
             </ul>
