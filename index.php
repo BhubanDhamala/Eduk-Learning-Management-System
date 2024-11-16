@@ -209,7 +209,7 @@
             width: 100%;
         }
 
-        .container {
+        .body-container {
             max-width: 1200px;
             display: flex;
             flex-direction: row;
@@ -276,6 +276,11 @@
     </style>
 </head>
 <body>
+
+
+
+
+
     <header>
 	<div class="logo">
     <a href="index.php"> 
@@ -287,8 +292,8 @@
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
                 <li><a href="">Courses</a></li>
-                <li><a href="http://localhost/Eduk-Learning-Management-System/contactform.php">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="contact_us.php">Contact</a></li>
+                <li><a href="About.php">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
             </ul>
         </nav>
@@ -304,14 +309,16 @@
 
 <!-- body part -->
     <div class="main">
-        <div class="container">
+        <div class="body-container">
 
             <div class="content">
                 <h1>Learning Management System</h1>
                 <p>Our learning management system (LMS) is a web-based <br> 
                 software application for educational courses, training programs, materials,<br>
                  online learning courses, and certifications.</p>
-                <button onclick="contact()">Let's Work Together!</button>
+                 <div class="buttons">
+    <a href="contact_us.php" class="logon-form">Let's Work Together!</a>
+</div>
             </div>
             <div class="illustration">
                 <img src="admin/images/lms_hero.png" alt="Character working on laptop">
@@ -319,11 +326,7 @@
         </div>
     </div>
 
-    <script>
-        function contact() {
-            alert("Contact form coming soon!");
-        }
-    </script>
+
 
 <!-- body part end -->
 
