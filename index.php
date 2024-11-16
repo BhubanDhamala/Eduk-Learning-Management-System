@@ -316,7 +316,9 @@
                 <p>Our learning management system (LMS) is a web-based <br> 
                 software application for educational courses, training programs, materials,<br>
                  online learning courses, and certifications.</p>
-                <button onclick="contact()">Let's Work Together!</button>
+                 <div class="buttons">
+    <a href="contact_us.php" class="logon-form">Let's Work Together!</a>
+</div>
             </div>
             <div class="illustration">
                 <img src="admin/images/lms_hero.png" alt="Character working on laptop">
@@ -324,11 +326,7 @@
         </div>
     </div>
 
-    <script>
-        function contact() {
-            alert("Contact form coming soon!");
-        }
-    </script>
+
 
 <!-- body part end -->
 
