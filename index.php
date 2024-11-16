@@ -209,7 +209,7 @@
             width: 100%;
         }
 
-        .container {
+        .body-container {
             max-width: 1200px;
             display: flex;
             flex-direction: row;
@@ -276,6 +276,11 @@
     </style>
 </head>
 <body>
+
+
+
+
+
     <header>
 	<div class="logo">
     <a href="index.php"> 
@@ -287,8 +292,8 @@
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
                 <li><a href="">Courses</a></li>
-                <li><a href="http://localhost/Eduk-Learning-Management-System/contactform.php">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="contact_us.php">Contact</a></li>
+                <li><a href="About.php">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
             </ul>
         </nav>
@@ -304,7 +309,7 @@
 
 <!-- body part -->
     <div class="main">
-        <div class="container">
+        <div class="body-container">
 
             <div class="content">
                 <h1>Learning Management System</h1>
