@@ -12,42 +12,199 @@
             font-family: Arial, sans-serif;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 76px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            position: relative;
-        }
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .logo img {
-            height: 44px;
-        }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-right: 492px;
-            display: flex;
-        }
+/* Header Styles */
+header {
+    background-color: #1F2A44;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 1px;
+    margin: 0.9px auto;
+    max-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+/* Logo with White Background */
+.logo {
+    background-color: #fff; /* Set the logo background to white */
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+.logo img {
+    height: 50px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
 
-        nav ul li a:hover {
-            color: #007bff;
-        }
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6347;
+    transform: translateY(-5px);
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF6347;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FF6347;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #e65342;
+    transform: translateY(-3px);
+}
+
+/* Admin Button */
+.admin-logon {
+    background-color: #3498db;
+}
+
+.admin-logon:hover {
+    background-color: #2980b9;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-toggle:hover {
+    background-color: #e65342;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1F2A44;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 15px 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + nav ul {
+        display: flex;
+    }
+}
+
+/* Active Menu Toggle */
+.menu-toggle.active {
+    background-color: #e65342;
+}
+
 
         .buttons {
             display: flex;
@@ -209,7 +366,7 @@
             width: 100%;
         }
 
-        .container {
+        .body-container {
             max-width: 1200px;
             display: flex;
             flex-direction: row;
@@ -276,6 +433,11 @@
     </style>
 </head>
 <body>
+
+
+
+
+
     <header>
 	<div class="logo">
     <a href="index.php"> 
@@ -287,8 +449,13 @@
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
                 <li><a href="">Courses</a></li>
+<<<<<<< HEAD
                 <li><a href="http://localhost/Eduk-Learning-Management-System/contactform.php">Contact</a></li>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/about.php">About Us</a></li>
+=======
+                <li><a href="contact_us.php">Contact</a></li>
+                <li><a href="About.php">About Us</a></li>
+>>>>>>> 4a3a300d3b6d88e5284bedeffe61659daf9d174f
                 <!-- <li><a href="#">Others</a></li> -->
             </ul>
         </nav>
@@ -304,14 +471,16 @@
 
 <!-- body part -->
     <div class="main">
-        <div class="container">
+        <div class="body-container">
 
             <div class="content">
                 <h1>Learning Management System</h1>
                 <p>Our learning management system (LMS) is a web-based <br> 
                 software application for educational courses, training programs, materials,<br>
                  online learning courses, and certifications.</p>
-                <button onclick="contact()">Let's Work Together!</button>
+                 <div class="buttons">
+    <a href="contact_us.php" class="logon-form">Let's Work Together!</a>
+</div>
             </div>
             <div class="illustration">
                 <img src="admin/images/lms_hero.png" alt="Character working on laptop">
@@ -319,11 +488,7 @@
         </div>
     </div>
 
-    <script>
-        function contact() {
-            alert("Contact form coming soon!");
-        }
-    </script>
+
 
 <!-- body part end -->
 
