@@ -315,7 +315,7 @@
                 <p class="bio">Building robust backend systems to power our learning management platform.</p>
             </div>
             <div class="member">
-                <img src="/api/placeholder/150/150" alt="Dhiraj Sah">
+                <img src="admin/images/dhiraj.jpe" alt="Dhiraj Sah">
                 <h3>Dhiraj Sah</h3>
                 <p class="role">User interface and user experience</p>
                 <p class="bio">Analyzing and optimizing system performance for the best user experience.</p>
