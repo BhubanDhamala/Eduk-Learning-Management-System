@@ -45,11 +45,11 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eb2525;
+    text-decoration: none;
+}
 
         .nav-links {
             display: flex;
