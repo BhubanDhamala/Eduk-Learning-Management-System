@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-<?php include('header_dashboard.php'); ?>
-    <body id="class_div">
-		<?php include('navbar_about.php'); ?>
- 
-    
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span12" id="content">
-                     <div class="row-fluid">
-                        <!-- block -->
-                        <div class="block">
-								<div class="navbar navbar-inner block-header">
-									<div id="" class="muted pull-right"><a href="index.php"><i class="icon-arrow-left"></i> Back</a></div>
-								</div>
-                            <div class="block-content collapse in">
-                                <div class="span12">
-										<?php
-											$mission_query = mysqli_query($conn,"select * from content where title  = 'mission' ")or die(mysqli_error());
-											$mission_row = mysqli_fetch_array($mission_query);
-											echo $mission_row['content'];
-										?>
-								<hr>
-										<?php
-											$mission_query = mysqli_query($conn,"select * from content where title  = 'vision' ")or die(mysqli_error());
-											$mission_row = mysqli_fetch_array($mission_query);
-											echo $mission_row['content'];
-										?>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /block -->
-                    </div>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +47,7 @@
         .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #eb2525;
+    color: #EB1D3A;
     text-decoration: none;
 }
 
@@ -315,7 +281,6 @@
                 <div class="auth-buttons">
                     <a href="http://localhost/Eduk-Learning-Management-System/admin" class="btn btn-login">Admin Login</a>
                     <a href="logonform.php" class="btn btn-signup">Log on</a>
->>>>>>> 4a3a300d3b6d88e5284bedeffe61659daf9d174f
                 </div>
             </div>
         </div>
