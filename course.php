@@ -95,17 +95,16 @@
 
     <div class="container">
         <div id="courseGrid" class="course-grid">
-            <!-- Courses will be dynamically added here -->
+            
         </div>
     </div>
 
     <script>
         const courses = [
             {
-                title: "Web Development Masterclass",
-                description: "Complete course covering HTML, CSS, JavaScript, and modern frameworks",
-                instructor: "John Doe",
-                price: 49.99,
+                title: "Introduction of Information Technology",
+                description: "The course introduces students to hardware, software, networking, data management, and emerging trends in IT.",
+                instructor: "Suresh Diyal",
                 image: "/api/placeholder/350/200?text=Web+Development"
             },
             {
