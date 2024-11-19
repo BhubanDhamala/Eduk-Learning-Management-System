@@ -102,99 +102,102 @@
     <script>
         const courses = [
             {
-                title: "Introduction of Information Technology",
+                title: "Introduction of information technology",
                 description: "The course introduces students to hardware, software, networking, data management, and emerging trends in IT.",
                 instructor: "Suresh Diyal",
-                image: "/api/placeholder/350/200?text=Web+Development"
+                price: 39.90,
+                image: ""
+
+
             },
             {
-                title: "Python for Beginners",
-                description: "Learn Python programming from scratch with hands-on projects",
-                instructor: "Jane Smith",
+                title: " Programming concept with c",
+                description: " It follows a structured approach, is highly portable, and forms the foundation of many modern languages like C++ and Java.",
+                instructor: "Bijay Malla",
                 price: 39.99,
                 image: "/api/placeholder/350/200?text=Python+Programming"
             },
             {
-                title: "Data Science Essentials",
-                description: "Introduction to data science, machine learning, and data analysis",
-                instructor: "Mike Johnson",
-                price: 59.99,
+                title: "Digital logics",
+                description: "Digital logic is essential for designing reliable and efficient digital systems, forming the backbone of modern computing .",
+                instructor: "Suresh diyal",
+                price: 40.10,
                 image: "/api/placeholder/350/200?text=Data+Science"
             },
             {
-                title: "Digital Marketing Strategy",
-                description: "Comprehensive guide to modern digital marketing techniques",
-                instructor: "Sarah Williams",
+                title: "Object orinted programming with C++ ",
+                description: "C++ combines the power of procedural programming with OOP, making it a versatile choice for system software, games, and high-performance applications.",
+                instructor: "Govinda Subedi",
                 price: 44.99,
-                image: "/api/placeholder/350/200?text=Digital+Marketing"
+                image: "..//admin/images/oop."
             },
             {
-                title: "Artificial Intelligence Fundamentals",
-                description: "Comprehensive overview of AI concepts, neural networks, and machine learning",
-                instructor: "Dr. Emily Chen",
+                title: "Data structures and algorithms",
+                description: "Understanding DSA is essential for building scalable and high-performance applications.",
+                instructor: "Amrit Marasaini",
                 price: 69.99,
                 image: "/api/placeholder/350/200?text=AI+Fundamentals"
             },
             {
-                title: "Mobile App Development with React Native",
-                description: "Create cross-platform mobile applications using React Native framework",
-                instructor: "Alex Rodriguez",
+                title: "Microprocessor & computer organization",
+                description: "Understanding computer organization helps in optimizing system performance and designing better hardware architectures.",
+                instructor: "Gobinda Subedi",
                 price: 54.99,
                 image: "/api/placeholder/350/200?text=Mobile+App+Dev"
             },
             {
-                title: "Cybersecurity Essentials",
-                description: "Learn network security, ethical hacking, and defense strategies",
-                instructor: "Mark Thompson",
+                title: "Web technology",
+                description: "Web technology refers to the tools, languages, and frameworks used to create, develop, and maintain websites and web applications.",
+                instructor: "Bijay Malla",
                 price: 59.99,
                 image: "/api/placeholder/350/200?text=Cybersecurity"
             },
             {
-                title: "Graphic Design Masterclass",
-                description: "Professional graphic design techniques using Adobe Creative Suite",
-                instructor: "Lisa Martinez",
+                title: "Operating system",
+                description: "The OS is crucial for the overall functioning of a computer, making it possible for users and applications to interact with hardware in a controlled, efficient manner.",
+                instructor: "Keshab Pokharel",
                 price: 49.99,
                 image: "/api/placeholder/350/200?text=Graphic+Design"
             },
             {
-                title: "Financial Investment and Trading",
-                description: "Comprehensive guide to stock markets, investment strategies, and portfolio management",
-                instructor: "Robert Kim",
+                title: "Java programming and language",
+                description: "Java code is compiled into bytecode, which is executed by the JVM, making it platform-independent.",
+                instructor: "Bijay Malla",
                 price: 64.99,
                 image: "/api/placeholder/350/200?text=Financial+Investing"
             },
             {
-                title: "Cloud Computing with AWS",
-                description: "Complete course on Amazon Web Services cloud infrastructure and services",
-                instructor: "David Lee",
+                title: "Data communication and network ",
+                description: " It involves the transfer of digital data across a network, enabling devices to share resources, exchange information, and perform collaborative tasks.",
+                instructor: "Suresh Diyal",
                 price: 59.99,
                 image: "/api/placeholder/350/200?text=Cloud+Computing"
             },
             {
-                title: "UX/UI Design Principles",
-                description: "Master user experience and interface design for digital products",
-                instructor: "Emma Wilson",
+                title: "Teaching math",
+                description: "Encouraging logical thinking, persistence, and critical reasoning is also central to successful math instruction.",
+                instructor: "Narhari Achary",
                 price: 47.99,
                 image: "/api/placeholder/350/200?text=UX+UI+Design"
             },
             {
-                title: "Machine Learning with Python",
-                description: "Advanced machine learning techniques and practical applications",
-                instructor: "Dr. Michael Brown",
+                title: "System administration using linux",
+                description: "System Administration using Linux involves managing and maintaining Linux-based servers and systems to ensure their smooth and secure operation.",
+                instructor: "Keshab Pokharel",
                 price: 69.99,
                 image: "/api/placeholder/350/200?text=Machine+Learning"
             },
             {
-                title: "Creative Writing Workshop",
-                description: "Develop your storytelling skills and learn professional writing techniques",
-                instructor: "Karen Evans",
+                title: "Network security",
+                description: "Network security encompasses a range of strategies, tools, and techniques, including firewalls, encryption, intrusion detection systems (IDS), and virtual private networks (VPNs), among others.",
+                instructor: "Keshab Pokharel",
                 price: 39.99,
                 image: "/api/placeholder/350/200?text=Creative+Writing"
             },
             {
-                title: "Blockchain and Cryptocurrency",
-                description: "Comprehensive understanding of blockchain technology and cryptocurrency markets",
-                instructor: "James Carter",
+                title: "Artificial intelligence in education",
+                description: "AI can personalize learning experiences, automate administrative tasks, and improve educational outcomes.",
+                instructor: "Rajendra Rokaya",
                 price: 54.99,
                 image: "/api/placeholder/350/200?text=Blockchain"
             }
