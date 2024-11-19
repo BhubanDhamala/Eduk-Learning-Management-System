@@ -105,8 +105,8 @@
                 title: "Introduction of information technology",
                 description: "The course introduces students to hardware, software, networking, data management, and emerging trends in IT.",
                 instructor: "Suresh Diyal",
-                price: 39.90,
-                image: ""
+                price:10.10,
+                image: "./admin/images/IIT.jpeg"
 
 
             },
@@ -129,7 +129,7 @@
                 description: "C++ combines the power of procedural programming with OOP, making it a versatile choice for system software, games, and high-performance applications.",
                 instructor: "Govinda Subedi",
                 price: 44.99,
-                image: "..//admin/images/oop."
+                image: "./admin/images/elogo.png"
             },
             {
                 title: "Data structures and algorithms",
