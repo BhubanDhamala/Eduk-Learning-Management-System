@@ -5,279 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - EduK Learning Management System</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1d4ed8;
-            --text-color: #1f2937;
-            --light-bg: #f3f4f6;
-        }
+    :root {
+        --primary-color: #2563eb; /* Blue */
+        --secondary-color: #1d4ed8; /* Darker Blue */
+        --text-color: #1f2937; /* Dark Gray */
+        --light-bg: #f3f4f6; /* Light Background */
+        --glow-color: rgba(37, 99, 235, 0.6); /* Glow Effect */
+    }
 
-        body {
-            line-height: 1.3;
-            color: var(--text-color);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
+    body {
+        line-height: 1.6;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: var(--light-bg);
+    }
 
-        /* Navigation Styles */
-        .navbar {
-            background-color: white;
-            padding: 1rem 5%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
+    /* Navigation Styles */
+    .navbar {
+        background-color: white;
+        padding: 1.5rem 8%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
 
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #eb2525;
-    text-decoration: none;
-}
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
 
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-        }
+    .logo:hover {
+        transform: scale(1.1);
+    }
 
-        .nav-links a:not(.btn) {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
 
-        .nav-links a:not(.btn):hover {
-            color: var(--primary-color);
-        }
+    .nav-links a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-        .auth-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-left: 2rem;
-        }
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background-color: var(--primary-color);
+        bottom: -5px;
+        left: 0;
+        transition: width 0.4s ease;
+    }
 
-        .btn {
-            padding: 0.5rem 1.5rem;
-            border-radius: 6px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
+    .nav-links a:hover {
+        color: var(--primary-color);
+        transform: scale(1.1);
+    }
 
-        .btn-login {
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            background: transparent;
-        }
+    .nav-links a:hover::after {
+        width: 100%;
+    }
 
-        .btn-login:hover {
-            background: var(--primary-color);
-            color: white;
-        }
+    /* Main Content Container */
+    .container {
+        max-width: 800px;
+        margin: 120px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-        .btn-signup {
-            background: var(--primary-color);
-            color: white;
-            border: 2px solid var(--primary-color);
-        }
+    /* Contact Form */
+    .contact-header h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+    }
 
-        .btn-signup:hover {
-            background: var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
+    .contact-form {
+        background-color: var(--light-bg);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Main Content Styles */
-        .container {
-            max-width: 800px;
-            margin: 120px auto 50px;
-            padding: 20px;
-            flex: 1;
-        }
+    .form-group {
+        margin-bottom: 15px;
+    }
 
-        .contact-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
 
-        .contact-header h1 {
-            color: var(--text-color);
-            margin-bottom: 10px;
-        }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .contact-header p {
-            color: #666;
-        }
+    input:focus, textarea:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 10px var(--glow-color);
+        outline: none;
+    }
 
-        .contact-form {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
+    button {
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+    button:hover {
+        background: var(--secondary-color);
+        transform: translateY(-3px);
+    }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--text-color);
-            font-weight: bold;
-        }
+    .success-message {
+        text-align: center;
+        color: var(--primary-color);
+        margin-top: 20px;
+        display: none;
+    }
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+    .error {
+        color: red;
+        font-size: 0.9rem;
+        margin-top: 5px;
+        display: none;
+    }
 
-        textarea {
-            height: 150px;
-            resize: vertical;
-        }
+    /* Footer Styles */
+    .footer {
+        background-color: #1d4ed8; /* Vibrant background */
+        color: white;
+        padding: 1rem 1%;
+        text-align: center;
+        margin-top: auto;
+        position: relative;
+        border-top: 4px solid var(--secondary-color);
+    }
 
-        .error {
-            color: #ff0000;
-            font-size: 14px;
-            margin-top: 5px;
-            display: none;
-        }
+    .footer-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
 
-        button {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-            transition: background-color 0.3s;
-        }
+    .footer-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        color: #e0e7ff;
+    }
 
-        button:hover {
-            background-color: var(--secondary-color);
-        }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-        .success-message {
-            display: none;
-            text-align: center;
-            color: var(--primary-color);
-            margin-top: 20px;
-            font-weight: bold;
-        }
+    .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s, transform 0.3s ease;
+    }
 
-        .contact-info {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
+    .social-links a:hover {
+        color: var(--glow-color);
+        transform: scale(1.2) rotate(10deg);
+    }
 
-        .info-item {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        color: #cbd5e1;
+    }
+</style>
 
-        .info-item i {
-            font-size: 24px;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        /* Footer Styles */
-        .footer {
-            background-color: var(--text-color);
-            color: white;
-            padding: 3rem 5%;
-            margin-top: auto;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-title {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .footer-description {
-            margin-bottom: 2rem;
-            color: #d1d5db;
-        }
-
-        .social-links {
-            margin-bottom: 2rem;
-        }
-
-        .social-links a {
-            color: white;
-            margin: 0 0.8rem;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-            opacity: 0.8;
-        }
-
-        .social-links a:hover {
-            color: var(--primary-color);
-            opacity: 1;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .auth-buttons {
-                margin-left: 0;
-            }
-
-            .container {
-                margin: 100px 20px 40px;
-            }
-
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -285,16 +230,10 @@
         <div class="nav-content">
             <a href="index.php" class="logo">EduK</a>
             <div class="nav-links">
-                <div class="nav-menu">
-                    <a href="index.php">Home</a>
-                    <a href="#">Courses</a>
-                    <a href="about.php">About</a>
-                    <a href="contact_us.php">Contact</a>
-                </div>
-                <div class="auth-buttons">
-                    <a href="http://localhost/Eduk-Learning-Management-System/admin" class="btn btn-login">Admin Login</a>
-                    <a href="logonform.php" class="btn btn-signup">Log on</a>
-                </div>
+                <a href="index.php">Home</a>
+                <a href="#">Courses</a>
+                <a href="about.php">About</a>
+                <a href="contact_us.php">Contact</a>
             </div>
         </div>
     </nav>
@@ -337,96 +276,44 @@
         <div class="success-message" id="successMessage">
             Thank you for your message! We'll get back to you soon.
         </div>
-
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Address</h3>
-                <p>Sanothimi, Bhaktapur</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p>bhubandhamala201@gmail.com</p>
-            </div>
-        </div>
     </div>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <h2 class="footer-title">EduK Learning Management System</h2>
-            <p class="footer-description">Transforming education through technology</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 EduK Learning Management System. All rights reserved.</p>
+    <div class="footer-content">
+        <h2 class="footer-title">EduK Learning Management System</h2>
+        <p class="footer-description">Transforming education through technology</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer>
-
+        <p>&copy; 2024 EduK Learning Management System. All rights reserved.</p>
+    </div>
+</footer>
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Reset errors
-            document.querySelectorAll('.error').forEach(error => {
-                error.style.display = 'none';
-            });
+            document.querySelectorAll('.error').forEach(error => error.style.display = 'none');
 
             let hasError = false;
-            
-            // Validate name
-            const name = document.getElementById('name').value.trim();
-            if (name === '') {
-                document.getElementById('nameError').style.display = 'block';
-                hasError = true;
-            }
 
-            // Validate email
-            const email = document.getElementById('email').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                document.getElementById('emailError').style.display = 'block';
-                hasError = true;
-            }
-
-            // Validate subject
-            const subject = document.getElementById('subject').value.trim();
-            if (subject === '') {
-                document.getElementById('subjectError').style.display = 'block';
-                hasError = true;
-            }
-
-            // Validate message
-            const message = document.getElementById('message').value.trim();
-            if (message === '') {
-                document.getElementById('messageError').style.display = 'block';
-                hasError = true;
-            }
+            // Validate inputs
+            ['name', 'email', 'subject', 'message'].forEach(id => {
+                const value = document.getElementById(id).value.trim();
+                if (!value) {
+                    document.getElementById(id + 'Error').style.display = 'block';
+                    hasError = true;
+                }
+            });
 
             // If no errors, show success message
             if (!hasError) {
                 document.getElementById('contactForm').reset();
-                document.getElementById('successMessage').style.display = 'block';
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    document.getElementById('successMessage').style.display = 'none';
-                }, 5000);
-            }
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.querySelector('.navbar').style.backgroundColor = '#ffffff';
-                document.querySelector('.navbar').style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-            } else {
-                document.querySelector('.navbar').style.backgroundColor = 'transparent';
-                document.querySelector('.navbar').style.boxShadow = 'none';
+                const successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block';
+                setTimeout(() => successMessage.style.display = 'none', 5000);
             }
         });
     </script>
