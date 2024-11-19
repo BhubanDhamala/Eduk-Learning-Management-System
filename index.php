@@ -28,30 +28,28 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1F2A44;
+    background-color: #1C2B59;
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed;
     border-radius: 1px;
     margin: 0.9px auto;
     max-width: auto;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1000;
 }
+
 
 /* Logo with White Background */
-.logo {
-    background-color: #fff; /* Set the logo background to white */
-    padding: 10px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-}
+
 
 .logo img {
+    padding-left:150px;
     height: 50px;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -76,8 +74,8 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 5px 10px;
@@ -85,7 +83,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF6347;
+    color: #EB1D3A;
     transform: translateY(-5px);
 }
 
@@ -96,7 +94,7 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #FF6347;
+    background-color: #EB1D3A;
     transition: width 0.3s;
 }
 
@@ -441,14 +439,14 @@ nav ul li a:hover::after {
     <header>
 	<div class="logo">
     <a href="index.php"> 
-        <img src="admin/images/elogo.png" alt="Moodle Logo">
+        <img src="admin/images/eduk logo.png" alt="eduk Logo">
     </a>
 </div>
 
         <nav>
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
-                <li><a href="">Courses</a></li>
+                <li><a href="course.php">Courses</a></li>
                 <li><a href="contact_us.php">Contact</a></li>
                 <li><a href="About.php">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->

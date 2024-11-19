@@ -48,6 +48,7 @@ body {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .logo {
     font-size: 2.5rem;  /* Significantly larger logo font */
     font-weight: bold;
@@ -61,6 +62,19 @@ body {
     align-items: center;
     gap: 3rem;  /* Increased space between items */
 }
+=======
+        .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eb2525;
+    text-decoration: none;
+}
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+>>>>>>> 3e1f0cd17569bbe7e249077953794d97400beea9
 
 .nav-menu {
     display: flex;
