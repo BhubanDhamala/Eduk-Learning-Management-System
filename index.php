@@ -439,7 +439,7 @@ nav ul li a:hover::after {
     <header>
 	<div class="logo">
     <a href="index.php"> 
-        <img src="admin/images/eduk logo.png" alt="eduk Logo">
+        <img src="admin/images/edukl.png" alt="eduk Logo">
     </a>
 </div>
 
