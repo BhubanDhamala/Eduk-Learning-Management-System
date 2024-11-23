@@ -148,8 +148,13 @@
         }
 
         function enrollCourse(courseTitle) {
-            alert(`You are enrolling in: ${courseTitle}`);
-            // In a real application, this would trigger the enrollment process
+            if (courseTitle === "Network security") {
+                // Navigate to the network security course page
+                window.location.href = "Network_course.php";
+            } else {
+                alert(`You are enrolling in: ${courseTitle}`);
+                // Handle other courses as before
+            }
         }
 
         function searchCourses() {
