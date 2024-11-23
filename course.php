@@ -105,101 +105,25 @@
                 title: "Introduction of information technology",
                 description: "The course introduces students to hardware, software, networking, data management, and emerging trends in IT.",
                 instructor: "Suresh Diyal",
-                price:10.10,
                 image: "./admin/images/IIT.jpeg"
-
-
             },
             {
-                title: " Programming concept with c",
-                description: " It follows a structured approach, is highly portable, and forms the foundation of many modern languages like C++ and Java.",
-                instructor: "Bijay Malla",
-                price: 39.99,
-                image: "/api/placeholder/350/200?text=Python+Programming"
-            },
-            {
-                title: "Digital logics",
-                description: "Digital logic is essential for designing reliable and efficient digital systems, forming the backbone of modern computing .",
-                instructor: "Suresh diyal",
-                price: 40.10,
-                image: "/api/placeholder/350/200?text=Data+Science"
-            },
-            {
-                title: "Object orinted programming with C++ ",
-                description: "C++ combines the power of procedural programming with OOP, making it a versatile choice for system software, games, and high-performance applications.",
-                instructor: "Govinda Subedi",
-                price: 44.99,
-                image: "./admin/images/elogo.png"
-            },
-            {
-                title: "Data structures and algorithms",
-                description: "Understanding DSA is essential for building scalable and high-performance applications.",
-                instructor: "Amrit Marasaini",
-                price: 69.99,
-                image: "/api/placeholder/350/200?text=AI+Fundamentals"
-            },
-            {
-                title: "Microprocessor & computer organization",
-                description: "Understanding computer organization helps in optimizing system performance and designing better hardware architectures.",
-                instructor: "Gobinda Subedi",
-                price: 54.99,
-                image: "/api/placeholder/350/200?text=Mobile+App+Dev"
-            },
-            {
-                title: "Web technology",
-                description: "Web technology refers to the tools, languages, and frameworks used to create, develop, and maintain websites and web applications.",
-                instructor: "Bijay Malla",
-                price: 59.99,
-                image: "/api/placeholder/350/200?text=Cybersecurity"
-            },
-            {
-                title: "Operating system",
-                description: "The OS is crucial for the overall functioning of a computer, making it possible for users and applications to interact with hardware in a controlled, efficient manner.",
-                instructor: "Keshab Pokharel",
-                price: 49.99,
-                image: "/api/placeholder/350/200?text=Graphic+Design"
-            },
-            {
-                title: "Java programming and language",
-                description: "Java code is compiled into bytecode, which is executed by the JVM, making it platform-independent.",
-                instructor: "Bijay Malla",
-                price: 64.99,
-                image: "/api/placeholder/350/200?text=Financial+Investing"
-            },
-            {
-                title: "Data communication and network ",
-                description: " It involves the transfer of digital data across a network, enabling devices to share resources, exchange information, and perform collaborative tasks.",
-                instructor: "Suresh Diyal",
-                price: 59.99,
-                image: "/api/placeholder/350/200?text=Cloud+Computing"
-            },
-            {
-                title: "Teaching math",
-                description: "Encouraging logical thinking, persistence, and critical reasoning is also central to successful math instruction.",
-                instructor: "Narhari Achary",
-                price: 47.99,
-                image: "/api/placeholder/350/200?text=UX+UI+Design"
-            },
-            {
-                title: "System administration using linux",
+                title: "System Administration using Linux",
                 description: "System Administration using Linux involves managing and maintaining Linux-based servers and systems to ensure their smooth and secure operation.",
                 instructor: "Keshab Pokharel",
-                price: 69.99,
-                image: "/api/placeholder/350/200?text=Machine+Learning"
+                image: "admin/images/SA.jpeg"
+            },
+            {
+                title: "Database Management System",
+                description: "DBMS provides a systematic approach to manage, store, and retrieve data efficiently while ensuring data integrity, security, and concurrent access control.",
+                instructor: "Amrit Marasaini",
+                image: "./admin/images/Dbms.jpeg"
             },
             {
                 title: "Network security",
                 description: "Network security encompasses a range of strategies, tools, and techniques, including firewalls, encryption, intrusion detection systems (IDS), and virtual private networks (VPNs), among others.",
                 instructor: "Keshab Pokharel",
-                price: 39.99,
-                image: "/api/placeholder/350/200?text=Creative+Writing"
-            },
-            {
-                title: "Artificial intelligence in education",
-                description: "AI can personalize learning experiences, automate administrative tasks, and improve educational outcomes.",
-                instructor: "Rajendra Rokaya",
-                price: 54.99,
-                image: "/api/placeholder/350/200?text=Blockchain"
+                image: "./admin/images/NW.JPEG"
             }
         ];
 
@@ -216,7 +140,6 @@
                         <h2>${course.title}</h2>
                         <p>${course.description}</p>
                         <p><strong>Instructor:</strong> ${course.instructor}</p>
-                        <p><strong>Price:</strong> $${course.price.toFixed(2)}</p>
                         <button class="enroll-btn" onclick="enrollCourse('${course.title}')">Enroll Now</button>
                     </div>
                 `;
