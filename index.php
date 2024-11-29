@@ -446,7 +446,7 @@ nav ul li a:hover::after {
         <nav>
             <ul>
                 <li><a href="http://localhost/Eduk-Learning-Management-System/index.php#">Home</a></li>
-                <li><a href="">Courses</a></li>
+                <li><a href="course.php">Courses</a></li>
                 <li><a href="contact_us.php">Contact</a></li>
                 <li><a href="About.php">About Us</a></li>
                 <!-- <li><a href="#">Others</a></li> -->
