@@ -105,6 +105,7 @@
                 title: "Introduction of information technology",
                 description: "The course introduces students to hardware, software, networking, data management, and emerging trends in IT.",
                 instructor: "Suresh Diyal",
+<<<<<<< HEAD
                 price: 39.90,
                 image:"./admin/images/IIT.jpeg"
 
@@ -182,24 +183,27 @@
             },
             {
                 title: "System administration using linux",
+
+                image: "./admin/images/IIT.jpeg"
+            },
+            {
+                title: "System Administration using Linux",
+
                 description: "System Administration using Linux involves managing and maintaining Linux-based servers and systems to ensure their smooth and secure operation.",
                 instructor: "Keshab Pokharel",
-                price: 69.99,
-                image: "/api/placeholder/350/200?text=Machine+Learning"
+                image: "admin/images/SA.jpeg"
+            },
+            {
+                title: "Database Management System",
+                description: "DBMS provides a systematic approach to manage, store, and retrieve data efficiently while ensuring data integrity, security, and concurrent access control.",
+                instructor: "Amrit Marasaini",
+                image: "./admin/images/Dbms.jpeg"
             },
             {
                 title: "Network security",
                 description: "Network security encompasses a range of strategies, tools, and techniques, including firewalls, encryption, intrusion detection systems (IDS), and virtual private networks (VPNs), among others.",
                 instructor: "Keshab Pokharel",
-                price: 39.99,
-                image: "/api/placeholder/350/200?text=Creative+Writing"
-            },
-            {
-                title: "Artificial intelligence in education",
-                description: "AI can personalize learning experiences, automate administrative tasks, and improve educational outcomes.",
-                instructor: "Rajendra Rokaya",
-                price: 54.99,
-                image: "/api/placeholder/350/200?text=Blockchain"
+                image: "./admin/images/NW.JPEG"
             }
         ];
 
@@ -216,7 +220,6 @@
                         <h2>${course.title}</h2>
                         <p>${course.description}</p>
                         <p><strong>Instructor:</strong> ${course.instructor}</p>
-                        <p><strong>Price:</strong> $${course.price.toFixed(2)}</p>
                         <button class="enroll-btn" onclick="enrollCourse('${course.title}')">Enroll Now</button>
                     </div>
                 `;
@@ -225,11 +228,26 @@
         }
 
         function enrollCourse(courseTitle) {
+    switch(courseTitle) {
+        case "Network security":
+            window.location.href = "Network_course.php";
+            break;
+        case "Introduction of information technology":
+            window.location.href = "itt_course.php";
+            break;
+            case "System Administration using Linux":
+            window.location.href = "linux_course.php";
+            break;
+            case "Database Management System":
+            window.location.href = "database_course.php";
+            break;
+        default:
             alert(`You are enrolling in: ${courseTitle}`);
-            // In a real application, this would trigger the enrollment process
-        }
+    }
+}
 
-        function searchCourses() {
+        
+ function searchCourses() {
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
             const filteredCourses = courses.filter(course => 
                 course.title.toLowerCase().includes(searchInput) || 
