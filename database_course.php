@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Security Course</title>
+    <title>Database Management System Course</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
         .course-content {
             margin-top: 20px;
         }
-        .back-btn, .info-btn {
+        .back-btn {
             display: inline-block;
             padding: 10px 20px;
             background-color: #3498db;
@@ -36,44 +36,42 @@
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        .back-btn:hover, .info-btn:hover {
+        .back-btn:hover {
             background-color: #2980b9;
-        }
-        .info-btn {
-            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-btn">Back to Courses</a>
-        <a href="introduction-to-it.html" class="info-btn">Introduction to Information Technology</a>
-        <h1>Network Security Course</h1>
+        <h1>Database Management System Course</h1>
         <div class="course-content">
             <h2>Course Overview</h2>
-            <p>Welcome to the Network Security course! This comprehensive program will teach you:</p>
+            <p>Welcome to the Database Management System course! This comprehensive program will provide in-depth knowledge of:</p>
             <ul>
-                <li>Fundamentals of network security</li>
-                <li>Firewall configuration and management</li>
-                <li>Intrusion Detection Systems (IDS)</li>
-                <li>Virtual Private Networks (VPNs)</li>
-                <li>Security protocols and encryption</li>
-                <li>Network monitoring and threat detection</li>
+                <li>Fundamentals of database systems</li>
+                <li>Relational database design</li>
+                <li>SQL programming and query optimization</li>
+                <li>Database normalization techniques</li>
+                <li>Transaction management and ACID properties</li>
+                <li>Database security and access control</li>
+                <li>NoSQL and distributed database concepts</li>
+                <li>Data warehousing and business intelligence</li>
             </ul>
-
+            
             <h2>Instructor</h2>
-            <p><strong>Keshab Pokharel</strong></p>
-            <p>Expert in network security with over 10 years of experience in the field.</p>
-
+            <p><strong>Amrit Marasaini</strong></p>
+            <p>Experienced database architect with extensive expertise in enterprise database solutions and data management strategies.</p>
+            
             <h2>Course Schedule</h2>
             <p>Duration: 12 weeks</p>
-            <p>Classes: Tuesday and Thursday, 2:00 PM - 4:00 PM</p>
-
+            <p>Classes: Tuesday and Thursday, 4:00 PM - 6:00 PM</p>
+            
             <h2>Prerequisites</h2>
             <ul>
-                <li>Basic understanding of computer networks</li>
-                <li>Familiarity with operating systems</li>
                 <li>Basic programming knowledge</li>
+                <li>Understanding of basic computer concepts</li>
+                <li>Familiarity with basic SQL queries</li>
             </ul>
         </div>
     </div>

@@ -148,16 +148,26 @@
         }
 
         function enrollCourse(courseTitle) {
-            if (courseTitle === "Network security") {
-                // Navigate to the network security course page
-                window.location.href = "Network_course.php";
-            } else {
-                alert(`You are enrolling in: ${courseTitle}`);
-                // Handle other courses as before
-            }
-        }
+    switch(courseTitle) {
+        case "Network security":
+            window.location.href = "Network_course.php";
+            break;
+        case "Introduction of information technology":
+            window.location.href = "itt_course.php";
+            break;
+            case "System Administration using Linux":
+            window.location.href = "linux_course.php";
+            break;
+            case "Database Management System":
+            window.location.href = "database_course.php";
+            break;
+        default:
+            alert(`You are enrolling in: ${courseTitle}`);
+    }
+}
 
-        function searchCourses() {
+        
+ function searchCourses() {
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
             const filteredCourses = courses.filter(course => 
                 course.title.toLowerCase().includes(searchInput) || 
