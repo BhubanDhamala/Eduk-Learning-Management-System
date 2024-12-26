@@ -13,15 +13,15 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(to right, #f3f4f6, #e2e8f0);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 80px;
-        }
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f3f4f6, #e2e8f0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 150px; /* Adjust this value to create space for the navbar */
+}
         .container {
             width: 90%;
             max-width: 1200px;
@@ -89,19 +89,18 @@
         }
         /* Search Bar Styling */
         #searchBar {
-            margin-top: 200px; /* Increased margin to move search bar further down */
-            width: 100%;
-            max-width: 800px; /* Increased width of the search bar */
-            margin: 20px auto;
-            padding: 15px 20px;
-            border-radius: 25px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
+    width: 100%;
+    max-width: 800px; /* Width of the search bar */
+    margin: 20px auto; /* Center the search bar */
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
         #searchBar:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);

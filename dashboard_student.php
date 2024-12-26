@@ -67,7 +67,15 @@
 								
 			
 									<?php }}else{ ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> You are currently not enroll to your class</div>
+
+										 <!--   <i class="icon-info-sign"></i>
+  <a href="course.php" style="color: white; font-weight: bold; font-size: 18px; font-family: Arial, sans-serif; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); letter-spacing: 0.5px;">
+    <b> Enroll the The Courses</b>
+  </a>
+</div>
+-->
+
+									<div class="alert alert-info"  ><i class="icon-info-sign"></i> You are currently not enroll to your class </div>
 									<?php } ?>	
 									</ul>
 						
