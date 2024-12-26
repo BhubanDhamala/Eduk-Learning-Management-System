@@ -17,7 +17,7 @@
 								<li><a href="#"><b>My Class</b></a><span class="divider">/</span></li>
 								<li><a href="#">School Year: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
-						 <!-- end breadcrumb -->
+						
 					 
                         <!-- block -->
                         <div class="block">
